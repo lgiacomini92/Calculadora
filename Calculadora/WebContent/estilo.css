@@ -1,0 +1,23 @@
+@CHARSET "ISO-8859-1";
+
+* input{
+	text-align: center;
+	width:50px;
+    height:30px;
+}
+
+input[name="btnZero"]{
+	width: 104px;
+}
+
+input[name="txtDisplay"]{
+	width:204px;
+	height:40px;
+	font-size:18;
+}
+
+input[name="txtAux"]{
+	width:204px;
+	height:auto;
+	font-size:12;
+}

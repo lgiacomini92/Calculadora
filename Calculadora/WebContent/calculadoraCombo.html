@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>	
+        <title>Calculadora com Combo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript"  lang="javascript" src="validacoes.js"></script>
+    </head>
+    <body>
+        <form name="frmCalculadora" id="frmCalculadora" action="CalculadoraServlet" method="post">
+        	<input type="hidden" name="htmlFormName" value="frmCalculadoraCombo"/> <!-- utilizado para pegar o nome do form no servlet -->
+            <table id="tbCalc">
+            	<tr>
+           			<th colspan="5"><h2>Calculadora com Combo</h2></th>
+           		</tr>
+            	<tr>
+            		<td>Número 1:</td>
+            		<td><input type="text" name="txtNum1" id="txtNum1" onkeypress="return SomenteNumero('txtNum1', event)" maxlength="10"/></td>
+            	</tr>
+            	<tr>
+            		<td>Número 2:</td> 
+            		<td><input type="text" name="txtNum2" id="txtNum2" onkeypress="return SomenteNumero('txtNum2', event)" maxlength="10"/></td>
+            	</tr>
+            	<tr>
+            		<td>Opção:</td>
+            		<td>
+			            <select name="selOperacao" id="selOperacao" style="min-width:100%">
+			                <option value="Somar">Somar</option>
+			                <option value="Subtrair">Subtrair</option>
+			                <option value="Multiplicar">Multiplicar</option>
+			                <option value="Dividir">Dividir</option>
+			            </select>
+		            </td>
+            	</tr>
+				<tr>
+            		<td><input type="button" value="Calcular" name="btnCalcular" onclick="calcula()"/></td>
+            		<td><input type="reset" value="Limpar" name="btnLimpar" /></td>
+            	</tr>
+            </table>
+            <a href="calculadora.html">Voltar para menu de calculadoras</a>
+        </form>
+    </body>
+</html>
