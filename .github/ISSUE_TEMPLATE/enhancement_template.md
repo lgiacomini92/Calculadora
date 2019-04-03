@@ -1,6 +1,6 @@
 ---
 name: Enhancement request
-about: Create a report to help us improve
+about: Create an enhancement to help us improve
 title: ''
 labels: 'enhancement'
 assignees: ''
